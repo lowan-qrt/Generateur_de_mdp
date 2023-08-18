@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: teal;
+}
+
+.nav-links {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav-links:hover {
+    background-color: rgb(18, 69, 103);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+/* -- END -- */
+
+/* Header */
+header {
+    margin: 5% 15%;
+    text-align: center;
+    font-size: larger;
+}
+/* -- END -- */
+
+/* Main */
+#nb_caractères {
+    display: flex;
+    margin: 0 5%;
+    flex-direction: column;
+}
+
+/* Nombre de caractères */
+.accordéon {
+    background-color: #e0e0e0;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordéon:before {
+    padding-left: 10px;
+    padding-right: 25px;
+    content: "▶"; /* Valeur par défaut */
+}
+
+.accordéon:hover {
+    background-color: #ccc;
+}
+
+.accordéon.active:before {
+    content: "▼"; /* Contenu lorsque la classe active est présente */
+}
+
+.panneau {
+    display: none;
+    overflow: hidden;
+}
+
+.panneau.active {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+#bouton1, #bouton2 {
+    font-size: larger;
+}
+/* -- END -- */
+
+/* Options */
+#options {
+    margin: 5%;
+}
+
+#options fieldset {
+    padding: 15px 0 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 30px 0;
+    background-color: #e0e0e0;
+}
+
+#options fieldset legend {
+    font-size: larger;
+    margin-left: 20px;
+}
+/* -- END -- */
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Mot de passe */
+#mdp {
+    margin: 0 0 5% 0;
+    text-align: center;
+}
+
+#champ_mdp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#champ_mdp #réinitialiser {
+    background-color: rgb(225, 225, 225);
+    border-right: none;
+    border-top: solid black 1px;
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+    border-radius: 10px 0 0 10px;
+}
+
+#champ_mdp #mdp_généré {
+    border: solid black 1px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+  
+/* Personnaliser l'apparence de la bordure lors de la sélection */
+#champ_mdp #mdp_généré:focus {
+border-top: 1px solid;
+border-top-style: 1px solid;
+border-bottom: 1px solid;
+border-bottom-style: solid 1px;
+outline: none;
+}
+
+#champ_mdp #copier {
+    background-color: rgb(225, 225, 225);
+    border-left: none;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    border-radius: 0 10px 10px 0;
+}
+
+#champ_mdp #réinitialiser:hover, #champ_mdp #copier:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+#champ_mdp #réinitialiser, #champ_mdp input, #champ_mdp #copier {
+    padding: 15px;
+}
+/* -- END -- */
+
+/* Footer */
+footer {
+    background-color: rgb(12, 118, 142);
+    padding: 4% 7% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Enfant 1 */
+#enfant1 p, #enfant1 a {
+    font-style: italic;
+}
+
+#liens_ig {
+    padding: 9% 0 0 6%;
+}
+
+#liens_ig div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#liens_ig img {
+    height: 29px;
+    width: 29px;
+    padding: 10px;
+}
+
+#liens_ig a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Enfant 2 */
+#enfant2 {
+    width: 300px;
+}
+
+#formulaire {
+    border: none;
+}
+
+#formulaire div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#formulaire label {
+    padding-bottom: 3px;
+}
+
+#formulaire input, #formulaire textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+/* -- END -- */
+
+#envoyer {
+    width: 25%;
+    cursor: pointer;
+}
+
+#envoyer:hover {
+    border: solid grey 1px;
+}
+/* -- END -- */
+/* -- END -- */

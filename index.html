@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Générateur de MDP</title>
+</head>
+<body>
+    <nav>
+        <a class="nav-links" href="index.html">Générateur</a>
+        <a class="nav-links" href="pages/vérificateur.html">Vérificateur</a>
+        <a class="nav-links" href="pages/conseils.html">Conseils</a>
+        <a class="nav-links" href="pages/à_propos.html">A Propos</a>
+    </nav>
+
+    <header>
+        <h1>Générateur de mot de passe</h1>
+        <br>
+        <p>Bienvenue ! Sur ce site, créez des mots de passe puissants ou testez vos propores mots de passe pour en connaître leurs forces.</p>
+    </header>
+
+    <main>
+        <!-- Nombre de caractères -->
+        <section id="nb_caractères">
+            <!-- Panneau 1 -->
+            <button class="accordéon" id="bouton1" onclick="Accordéon('bouton1', 'panneau1')">Nombre prédéfini</button>
+            <fieldset class="panneau" id="panneau1">
+                <div for="4">
+                    <input type="radio" class="pointer" name="x" id="4" value="4" checked>
+                    <label for="4" class="pointer" >4 (code PIN)</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="6" value="6">
+                    <label for="6" class="pointer" >6</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="8" value="8">
+                    <label for="8" class="pointer" >8 (classique)</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="10" value="10">
+                    <label for="10" class="pointer" >10</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="12" value="12">
+                    <label for="12" class="pointer" >12</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="16" value="16">
+                    <label for="16" class="pointer" >16</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="20" value="20">
+                    <label for="20" class="pointer" >20</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="25" value="25">
+                    <label for="25" class="pointer" >25</label>
+                </div>
+                <div>
+                    <input type="radio" class="pointer" name="x" id="30" value="30">
+                    <label for="30" class="pointer" >30</label>
+                </div>
+            </fieldset>
+    
+            <!-- Panneau 2 -->
+            <button class="accordéon" id="bouton2" onclick="Accordéon('bouton2', 'panneau2')">Entrez le nombre de caractères</button>
+            <fieldset class="panneau" id="panneau2">
+                <label for="nombreX">Entrez un nombre :</label>
+                <input id="nombreX" type="number" min="1" max="100" value="1">
+            </fieldset>
+        </section>
+
+        <!-- Options -->
+        <section id="options">
+            <fieldset>
+                <legend>Choisissez vos options</legend>
+                <div>
+                    <input type="checkbox" id="lower" name="options" checked>
+                    <label for="lower">Lettres minuscules</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="upper" name="options">
+                    <label for="upper">Lettres Majuscules</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="integers" name="options">
+                    <label for="integers">Chiffres</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="special_char" name="options">
+                    <label for="special_char">Caractères spéciaux</label>
+                </div>
+            </fieldset>
+        </section>
+
+        <!-- Mot de passe généré -->
+        <section id="mdp">
+            <h2>Mot de passe généré</h2>
+            <br>
+            <div id="champ_mdp">
+                <button id="réinitialiser">Réinitialiser</button>
+                <input type="text" value="- Réinitialisez ! -" id="mdp_généré">
+                <button id="copier">Copier</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="enfant1">
+            <h2>Une question ? un avis ?</h2>
+            <br>
+            <p>Contactez-nous pour plus de renseignements.</p>
+            <div id="liens_ig">
+                <div>
+                    <img src="supports/Instagram_Glyph_Black.png" alt="Instagram @lowan.qrt">
+                    <a href="https://www.instagram.com/lowan.qrt/?hl=fr" target="_blank">@lowan.qrt</a>
+                </div>
+                <div>
+                    <img src="supports/Instagram_Glyph_Black.png" alt="Instagram @jean_onillon">
+                    <a href="https://www.instagram.com/jean_onillon/?hl=fr" target="_blank">@jean_onillon</a>
+                </div>
+            </div>
+        </div>
+        <div id="enfant2">
+            <fieldset id="formulaire">
+                <div>
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="formulaire" placeholder="exemple@gmail.com" required>
+                </div>
+                <div>
+                    <label for="objet">Objet</label>
+                    <input type="text" id="objet" name="formulaire" required>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="formulaire" style="height: 7em; resize: none;" required></textarea>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+                    <input type="submit" id="envoyer" name="formulaire" value="Envoyer !">
+                </div>
+            </fieldset>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
