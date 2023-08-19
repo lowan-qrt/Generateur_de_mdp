@@ -158,10 +158,12 @@ document.getElementById("envoyer").onsubmit = function(event) {
 
 // RESPONSIVE
 function Menu() {
-    let navbar = document.getElementById('nav_menuR');
-    let valeur = window.getComputedStyle(navbar).getPropertyValue('visibility');
+    let html = document.getElementsByTagName('html');
+    let navbarR = document.getElementById('nav_menuR');
+    let valeur = window.getComputedStyle(navbarR).getPropertyValue('visibility');
     if (valeur === 'hidden') {
-        navbar.style.visibility = 'visible';
+        html.style.overflowY = 'hidden';
+        navbarR.style.visibility = 'visible';
         console.log('Menu affiché');
     } 
 }
