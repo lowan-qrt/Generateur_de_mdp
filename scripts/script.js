@@ -1,4 +1,4 @@
-// Appeler la fonction de génération de mot de passe au chargement initial
+// Appeler la fonction de génération de mot de passe à chaque chargement
 window.addEventListener("load", function () {
     genererMotDePasse();
 });
@@ -139,7 +139,7 @@ copier.addEventListener("click", function () {
 });
 
 
-// Ouvrir et pré-remplir le mail du formulaire de contact
+// Formulaire de contact
 document.getElementById("envoyer").onsubmit = function(event) {
     event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
 
@@ -162,6 +162,7 @@ function Menu() {
     let navbarR = document.getElementById('nav_menuR');
     let valeur = window.getComputedStyle(navbarR).getPropertyValue('visibility');
     
+    // Afficher le Menu s'il est caché
     if (valeur === 'hidden') {
         html.style.overflowY = 'hidden';
         navbarR.style.visibility = 'visible';
