@@ -62,9 +62,6 @@ function genererMotDePasse() {
     } else if (chemin == 2) {
         longueur = document.getElementById('nombreX').value
     }
-
-    console.log('valeur de longueur = ' + longueur)
-
     
     const caracteresMinuscules = "abcdefghijklmnopqrstuvwxyz";
     const caracteresMajuscules = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -157,3 +154,14 @@ document.getElementById("envoyer").onsubmit = function(event) {
 
     window.location.href = mailtoUrl; // Rediriger vers l'URL "mailto"
 };
+
+
+// RESPONSIVE
+function Menu() {
+    let navbar = document.getElementById('nav_menuR');
+    let valeur = window.getComputedStyle(navbar).getPropertyValue('visibility');
+    if (valeur === 'hidden') {
+        navbar.style.visibility = 'visible';
+        console.log('Menu affiché');
+    } 
+}
