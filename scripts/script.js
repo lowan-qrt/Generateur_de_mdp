@@ -158,9 +158,10 @@ document.getElementById("envoyer").onsubmit = function(event) {
 
 // RESPONSIVE
 function Menu() {
-    let html = document.getElementsByTagName('html');
+    let html = document.documentElement;
     let navbarR = document.getElementById('nav_menuR');
     let valeur = window.getComputedStyle(navbarR).getPropertyValue('visibility');
+    
     if (valeur === 'hidden') {
         html.style.overflowY = 'hidden';
         navbarR.style.visibility = 'visible';
