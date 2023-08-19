@@ -171,6 +171,7 @@ outline: none;
     padding: 15px;
 }
 /* -- END -- */
+/* -- END -- */
 
 /* Footer */
 footer {
@@ -206,6 +207,7 @@ footer {
     text-decoration: none;
     color: black;
 }
+/* -- END -- */
 
 /* Enfant 2 */
 #enfant2 {
@@ -242,16 +244,20 @@ footer {
     border: solid grey 1px;
 }
 /* -- END -- */
-/* -- END -- */
 
 
 /* Responsive */
 @media screen and (max-width: 710px) {
+    header, #bouton1, #bouton2, #options label,  footer {
+        font-size: 0.9em;
+    }
+
     /* Navbar */
     #navbar {
         display: none;
     }
-
+    
+    /* Navbar responsive */
     #navbarR {
         display: block;
         text-align: center;
@@ -295,22 +301,17 @@ footer {
     }
     /* -- END -- */
 
+    /* Main */
     /* Nombre de caractères */
     #nb_caractères {
         margin: 0 10%;
     }
-    /* -- END -- */
 
     /* Options */
     #options {
         margin: 10%;
     }
-    /* -- END -- */
-
-    header, #bouton1, #bouton2, #options label,  footer {
-        font-size: 0.9em;
-    }
-
+    
     /* Mot de passe généré */
     #mdp {
         margin: 10%;
