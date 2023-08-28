@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/à_propos.css">
+    <link rel="icon" type="image/png" href="../../supports/cadenas.png">
+    <title>Générateur de MDP</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a class="nav-links" href="../../index.html">Générateur</a>
+        <a class="nav-links" href="../../pages/conseils.html">Conseils</a>
+        <a class="nav-links" href="../../pages/crédits.html">Crédits</a>
+        <a class="nav-links" id="dernier" href="à_propos.html">À Propos</a>
+    </nav>
+
+    <main>
+        <p>Ce site web a été créé pour le pur plaisir de coder et d'apprendre de nouvelles choses dans le développement informatique.</p>
+        <p>Il fut intéressant de nous lancer ce projet pendant nos vacances. Nous pouvons le checker de notre liste des idées de projets !</p>
+        <br>
+        <p>Lowan et Jean.</p>
+    </main>
+
+    <!-- Formulaire -->
+    <footer>
+        <!-- Liens Instagram -->
+        <div id="enfant1">
+            <h2>Une question ? un avis ?</h2>
+            <br>
+            <p>Contactez-nous pour plus de renseignements.</p>
+            <div id="liens_ig">
+                <div>
+                    <img src="../../supports/Instagram_Glyph_Black.png" alt="Instagram @lowan.qrt">
+                    <a href="https://www.instagram.com/lowan.qrt/?hl=fr" target="_blank">@lowan.qrt</a>
+                </div>
+                <div>
+                    <img src="../../supports/Instagram_Glyph_Black.png" alt="Instagram @jean_onillon">
+                    <a href="https://www.instagram.com/jean_onillon/?hl=fr" target="_blank">@jean_onillon</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div id="enfant2">
+            <fieldset id="formulaire">
+                <div>
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="formulaire" placeholder="exemple@gmail.com" required>
+                </div>
+                <div>
+                    <label for="objet">Objet</label>
+                    <input type="text" id="objet" name="formulaire" required>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="formulaire" style="height: 7em; resize: none;" required></textarea>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+                    <input type="submit" id="envoyer" name="formulaire" value="Envoyer !">
+                </div>
+            </fieldset>
+        </div>
+    </footer>
+</body>
+</html>
