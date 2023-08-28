@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: teal;
+}
+
+.nav-links {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav-links:hover {
+    background-color: rgb(18, 69, 103);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+#navbarR, #nav_menuR {
+    display: none;
+}
+/* -- END -- */
+
+/* main */
+main {
+    margin: 5%;
+    font-size: large;
+}
+/* -- END -- */
+
+/* Footer */
+footer {
+    background-color: rgb(12, 118, 142);
+    padding: 4% 7% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Enfant 1 */
+#enfant1 p, #enfant1 a {
+    font-style: italic;
+}
+
+#liens_ig {
+    padding: 9% 0 0 6%;
+}
+
+#liens_ig div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#liens_ig img {
+    height: 29px;
+    width: 29px;
+    padding: 10px;
+}
+
+#liens_ig a {
+    text-decoration: none;
+    color: black;
+}
+/* -- END -- */
+
+/* Enfant 2 */
+#enfant2 {
+    width: 300px;
+}
+
+#formulaire {
+    border: none;
+}
+
+#formulaire div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#formulaire label {
+    padding-bottom: 3px;
+}
+
+#formulaire input, #formulaire textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+/* -- END -- */
+
+#envoyer {
+    width: 25%;
+    cursor: pointer;
+}
+
+#envoyer:hover {
+    border: solid grey 1px;
+}
+/* -- END -- */
