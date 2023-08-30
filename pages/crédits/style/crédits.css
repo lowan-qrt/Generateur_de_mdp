@@ -112,3 +112,77 @@ footer {
     border: solid grey 1px;
 }
 /* -- END -- */
+
+/* Responsive */
+@media screen and (max-width: 710px) {
+    header, #bouton1, #bouton2, #options label,  footer {
+        font-size: 0.9em;
+    }
+
+    /* Navbar */
+    #navbar {
+        display: none;
+    }
+    
+    /* Navbar responsive */
+    #navbarR {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #navbarR button {
+        height: 60px;
+        width: 100%;
+        background-color: teal;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    #nav_menuR {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: teal;
+    }
+
+    #nav_menuR a {
+        height: 100%;
+    }
+
+    #nav_menuR a:not(#dernier) {
+        border-bottom: solid rgba(174, 236, 255, 0.5) 2px;
+    }
+    /* -- END -- */
+
+    /* Main */
+    main {
+        margin: 10%;
+        font-size: medium;
+    }
+    /* -- END -- */
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #liens_ig img {
+        height: 20px;
+        width: 20px;
+        padding: 8px;
+    }
+
+    #enfant1 {
+        margin-bottom: 5%;
+    }
+    /* -- END -- */
+}
